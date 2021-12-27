@@ -21,13 +21,16 @@
 span {
   color: var(--basic);
 }
-body {
-  font-family: 'Open Sans';
-  font-size: 16px;
-  color: #2a2626;
-  line-height: 1.6em;
+* {
   margin: 0;
   padding: 0;
+}
+body,
+a {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: var(--dark);
+  line-height: 1.6em;
 }
 h1,
 h2,
@@ -63,4 +66,33 @@ section {
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+.title {
+  display: flex;
+}
+.title img {
+  position: relative;
+  top: -55px;
+  right: 270px;
+  height: 525px;
+}
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+.description div {
+  flex-basis: 540px;
+}
+button {
+  height: 50px;
+  width: 150px;
+  background-color: var(--basic);
+  margin-top: 40px;
+}
+button a {
+  margin: 12px 24px 12px 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: bold;
 }
