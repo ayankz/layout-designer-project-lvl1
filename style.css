@@ -10,34 +10,31 @@
   --blue: #1085c5;
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url(/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
   color: red;
 }
 @font-face {
-  font-family: 'Neucha';
+  font-family: "Neucha";
   src: url(/fonts/Neucha/Neucha-Regular.ttf);
 }
-span {
-  color: var(--basic);
-}
-* {
+body,
+p {
+  font-family: "Open Sans";
+  size: 16px;
+  font-weight: normal;
+  line-height: 1.6em;
+  color: var(--dark);
   margin: 0;
   padding: 0;
-}
-body,
-a {
-  font-family: 'Open Sans';
-  font-size: 16px;
-  color: var(--dark);
-  line-height: 1.6em;
 }
 h1,
 h2,
 h3 {
-  font-family: 'Neucha';
+  font-family: "Neucha";
   line-height: 1.2em;
   margin: 0;
+  font-weight: normal;
 }
 h1 {
   font-size: 72px;
@@ -48,70 +45,137 @@ h2 {
 h3 {
   font-size: 34px;
 }
-
-section::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(/img/background.png);
-
-  opacity: 0.1;
-  background-repeat: no-repeat;
-  background-size: cover;
+li {
+  list-style: none;
 }
-section {
-  max-width: 1110px;
-  margin: 0 auto;
+a {
+  text-decoration: none;
+}
+
+section div {
+  width: 1110px;
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.title {
+section {
+  position: relative;
   display: flex;
+  justify-content: center;
+}
+section::before {
+  content: "";
+  background-image: url(./img/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.title img {
+.header-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header-content h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-content img {
   position: relative;
   top: -55px;
-  right: 270px;
-  height: 525px;
+  right: -270px;
 }
-.description {
+span {
+  color: var(--basic);
+}
+
+.text-block {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
-.description p {
-  flex-basis: 540px;
+.text-item {
+  width: 540px;
 }
 button {
-  height: 50px;
-  width: 150px;
-  background-color: var(--basic);
-  margin-top: 40px;
+  width: 148px;
+  padding: 12px 24px 12px 24px;
   position: relative;
   left: 570px;
+  background-color: var(--basic);
+  margin-top: 40px;
 }
 button a {
-  margin: 12px 24px 12px 24px;
+  font-family: "Open Sans";
+  size: 16px;
+  font-weight: bold;
+  line-height: 1.6em;
+  color: var(--white);
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--white);
-  font-weight: bold;
 }
-.video-content {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
+}
+main h2 {
   text-align: center;
 }
-.video-content p {
+main p {
   margin-top: 27px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
-.video-content iframe {
+main iframe {
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-  position: relative;
-  bottom: -16px;
+}
+nav {
+  display: flex;
+  background-color: var(--basic-dark);
+  justify-content: center;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1110px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  height: 100%;
+}
+.navigation h2 {
+  color: var(--white);
+  font-weight: normal;
+  font-size: 52px;
+  flex-basis: 350px;
+}
+.nav-item {
+  flex-basis: 302px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 24px;
+}
+.nav-item h3 {
+  color: var(--basic);
+  margin-bottom: 16px;
+}
+.number {
+  font-family: "Neucha";
+  font-size: 64px;
+  margin-bottom: 40px;
+  line-height: 1;
+}
+.mt-20 {
+  margin-top: 20px;
 }
