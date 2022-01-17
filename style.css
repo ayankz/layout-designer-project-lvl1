@@ -182,6 +182,7 @@ section::before {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 500;
 }
 
 section {
@@ -220,6 +221,9 @@ section {
 }
 .relative {
   position: relative;
+}
+.z-1000 {
+  z-index: 1000;
 }
 .absolute {
   position: absolute;
