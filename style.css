@@ -170,7 +170,7 @@ nav {
   margin-top: 20px;
 } */
 /* OOCSS styles */
-/* section::before {
+section::before {
   content: "";
   background-image: url(./img/background.png);
   background-repeat: no-repeat;
@@ -182,16 +182,15 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 500;
-} */
+}
 
 section {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  background-color: var(--light);
+  position: relative;
 }
 .container {
-  position: relative;
-  z-index: 1000;
+  padding-top: 100px;
+  padding-bottom: 100px;
   max-width: 1110px;
   margin: 0 auto;
 }
@@ -225,6 +224,9 @@ section {
 .absolute {
   position: absolute;
 }
+.middle {
+  vertical-align: middle;
+}
 .border {
   border: 1px solid red;
 }
@@ -243,9 +245,7 @@ section {
 .mt-16 {
   margin-top: 16px;
 }
-.mb-100 {
-  margin-bottom: 100px;
-}
+
 .py-5 {
   padding: 5px 0 5px 0;
 }
@@ -253,8 +253,8 @@ section {
 .p-left-10 {
   padding-left: 10px;
 }
-.p-0 {
-  padding: 0;
+.pt-0 {
+  padding-top: 0;
 }
 .border-0 {
   border: 0;
