@@ -113,62 +113,7 @@ button a {
   text-decoration: none;
   text-transform: uppercase;
 }
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-}
-main h2 {
-  text-align: center;
-}
-main p {
-  margin-top: 27px;
-  margin-bottom: 30px;
-}
-main iframe {
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-nav {
-  display: flex;
-  background-color: var(--basic-dark);
-  justify-content: center;
-}
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 1110px;
-  margin-top: 200px;
-  margin-bottom: 100px;
-  height: 100%;
-}
-.navigation h2 {
-  color: var(--white);
-  font-weight: normal;
-  font-size: 52px;
-  flex-basis: 350px;
-}
-.nav-item {
-  flex-basis: 302px;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--white);
-  padding: 24px;
-}
-.nav-item h3 {
-  color: var(--basic);
-  margin-bottom: 16px;
-}
-.number {
-  font-family: "Neucha";
-  font-size: 64px;
-  margin-bottom: 40px;
-  line-height: 1;
-}
-.mt-20 {
-  margin-top: 20px;
-} */
+
 /* OOCSS styles */
 section::before {
   content: "";
@@ -216,6 +161,9 @@ section {
 .basis-540 {
   flex-basis: 540px;
 }
+.basis-350 {
+  flex-basis: 350px;
+}
 .basis-500 {
   flex-basis: 500px;
 }
@@ -260,6 +208,9 @@ section {
 .pt-0 {
   padding-top: 0;
 }
+.p-0 {
+  padding: 0;
+}
 .border-0 {
   border: 0;
 }
@@ -269,8 +220,24 @@ section {
 .mt-9 {
   margin-top: 9px;
 }
+
+.pt-200 {
+  padding-top: 200px;
+}
 .mt-60 {
   margin-top: 60px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.my-30 {
+  margin: 30px 0 30px 0;
+}
+.top-100 {
+  top: 100px;
 }
 .p-55 {
   padding: 55px;
@@ -278,11 +245,20 @@ section {
 .p-15 {
   padding: 15px;
 }
+.text-center {
+  text-align: center;
+}
+.p-24 {
+  padding: 24px;
+}
 .fs-14 {
   font-size: 14px;
 }
 .fs-12 {
   font-size: 12px;
+}
+.fs-52 {
+  font-size: 52px;
 }
 .h-50 {
   height: 50px;
@@ -326,11 +302,12 @@ section {
 .bg-basic-dark {
   background-color: var(--basic-dark);
 }
+.bg-light {
+  background-color: var(--light);
+}
+
 .shadow {
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
-}
-textarea {
-  resize: none;
 }
 .svg {
   width: 20px;
@@ -351,4 +328,13 @@ input {
 }
 .flex-grow-1 {
   flex-grow: 1;
+}
+.none {
+  text-decoration: none;
+}
+.number {
+  font-size: 64px;
+  font-family: "Neucha";
+  font-weight: normal;
+  margin-bottom: 40px;
 }
