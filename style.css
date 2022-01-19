@@ -127,7 +127,6 @@ section::before {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 500;
 }
 
 section {
@@ -176,6 +175,9 @@ section {
 }
 .z-500 {
   z-index: 500;
+}
+.z-2000 {
+  z-index: 2000;
 }
 
 .absolute {
