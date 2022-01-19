@@ -152,6 +152,7 @@ section {
 .align-center {
   align-items: center;
 }
+
 .justify-center {
   justify-content: center;
 }
@@ -173,6 +174,10 @@ section {
 .z-1000 {
   z-index: 1000;
 }
+.z-500 {
+  z-index: 500;
+}
+
 .absolute {
   position: absolute;
 }
@@ -193,6 +198,9 @@ section {
 }
 .mt-100 {
   margin-top: 100px;
+}
+.mt-40 {
+  margin-top: 40px;
 }
 .mt-16 {
   margin-top: 16px;
@@ -239,6 +247,12 @@ section {
 .top-100 {
   top: 100px;
 }
+.top-55 {
+  top: -55px;
+}
+.right-270 {
+  right: -270px;
+}
 .p-55 {
   padding: 55px;
 }
@@ -268,6 +282,9 @@ section {
 }
 .bold {
   font-weight: 700;
+}
+.px-12 {
+  padding: 12px 0 12px 0;
 }
 .uppercase {
   text-transform: uppercase;
@@ -309,15 +326,22 @@ section {
 .shadow {
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.15);
 }
+
 .svg {
   width: 20px;
   height: 20px;
 }
 .btn {
+  cursor: pointer;
+  background-color: var(--basic);
+  padding: 12px 24px 12px 24px;
+  border: 0;
+}
+.btn-footer {
   width: 70px;
   height: 50px;
   text-align: center;
-  border: 0;
+
   padding: 0;
 }
 .border-box {
@@ -337,4 +361,7 @@ input {
   font-family: "Neucha";
   font-weight: normal;
   margin-bottom: 40px;
+}
+.h-525 {
+  height: 525px;
 }

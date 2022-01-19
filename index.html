@@ -10,58 +10,36 @@
 </head>
 
 <body>
-  <!-- <section>
-    <div class="header-content">
-      <h1>
-        <span>Когнитивные <br />
+  <section>
+    <div class="container">
+      <h1 class="absolute z-1000">
+        <span class="color-orange">Когнитивные <br />
           искажения</span>
         <br />
         в программировании
       </h1>
-      <img src="./img/main.png" alt="" />
-      <div class="flex">
-        <p class="text-item">
+      <img src="./img/main.png" alt="" class="h-525 z-500 relative top-55 right-270" />
+
+      <div class="flex space-between">
+        <p class="basis-540">
           Мы, разработчики, часто сталкиваемся с проблемами, которые идут вразрез с нашей продуктивностью. Но мы часто
           игнорируем целостную картину. Некоторые из этих проблем малозаметны, некоторые
           существенны. Иногда с ними можно как-то справиться, а иногда, к сожалению, нет.
         </p>
-        <p class="text-item">
+        <p class="basis-540">
           Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности,
           багам и бесконечному разочарованию. <br /><br />
           Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а
           остатки нейтрализовать.
+          <br>
+          <button class="btn relative mt-40">
+            <a href="#" class="none">
+              <p class="bold uppercase color-white">Подробнее</p>
+            </a>
+          </button>
         </p>
       </div>
-      <button>
-        <a href="#">
-          Подробнее
-        </a>
-      </button>
-    </div>
-  </section>
-  </header>-->
-  <section id="ikea-effect">
-    <div class="container ">
-      <div class="flex wrap space-between">
-        <div class="mr-30 basis-540"> <img src=" ./img/1.png" class=" shadow"></div>
-        <div class="basis-500">
-          <h4 class="color-blur-dark ">Когнитивные искажения</h4>
-          <h2 class="mb-30">Эффект ИКЕА</h2>
-          <h3>Вы переоцениваете собственные решения, и, как следствие, недооцениваете решения других.</h3>
-        </div>
-      </div>
-      <div>
-        <h1 class="bg-brown py-5 fs-14 p-left-10 open-sans bold uppercase color-white mb-20 mt-100">Как проявляется</h1>
-      </div>
-      <div class="flex space-between">
-        <p class='basis-540'>Когнитивное искажение называется так из-за того, что потребители зачастую предпочитают
-          покупать товары, которые они
-          могут собрать сами, а не уже собранные кем-то.</p>
-        <p class='basis-540'>Мы склонны переоцнивать наши собственные решения и недооценивать решения других. Если вы
-          когда-то работали в компании,
-          которая использовала тупой внутренний инструмент вместо более удобного готового решения, вы понимаете, о чём я
-          говорю.</p>
-      </div>
+
     </div>
   </section>
   <main>
@@ -239,7 +217,7 @@
           <label for="email" class="">Электронная почта</label>
           <div class="flex mt-9">
             <input id="mail" class="p-15" type="text" placeholder="Ваша электронная почта">
-            <button class="btn bg-orange">
+            <button class="btn btn-footer">
               <a href="#"><img src="./img/send.svg" alt="" class=""></a>
             </button>
           </div>
